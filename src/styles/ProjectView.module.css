@@ -1,0 +1,9 @@
+.projectView {
+	display: flex;
+	height: 200px;
+	width: auto;
+	align-items: center;
+	justify-content: center;
+	background-color: red;
+	margin: 20px;
+}

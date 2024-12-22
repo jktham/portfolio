@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import "./globals.css";
+import "@/styles/globals.css";
+import ProjectView from "@/components/ProjectView";
 
 export const metadata: Metadata = {
 	title: "Portfolio",

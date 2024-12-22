@@ -1,27 +1,33 @@
 .page {
 	display: flex;
 	flex-direction: column;
-	height: 100vh;
+	min-height: 100vh;
 }
 
 .main {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
 	height: 100%
 }
 
+.title {
+	display: flex;
+	height: 300px;
+	align-items: center;
+	justify-content: center;
+	background-color: blue;
+}
+
+.titleText {
+	font-size: 3rem;
+}
+
 .footer {
+	margin-top: auto;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
 	height: 2rem;
-}
-
-.title {
-	font-size: 3rem;
+	background-color: green;
 }
 
 .footerText {
