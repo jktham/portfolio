@@ -16,7 +16,7 @@
 	background-color: blue;
 }
 
-.titleText {
+.title > h1 {
 	font-size: 3rem;
 }
 
@@ -30,6 +30,6 @@
 	background-color: green;
 }
 
-.footerText {
+.footer > p {
 	font-size: 1rem;
 }

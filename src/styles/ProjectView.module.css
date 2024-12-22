@@ -1,9 +1,92 @@
 .projectView {
 	display: flex;
-	height: 200px;
 	width: auto;
 	align-items: center;
 	justify-content: center;
 	background-color: red;
 	margin: 20px;
+	gap: 20px;
+	height: 300px;
+	flex-direction: row;
+}
+
+.reverse {
+	flex-direction: row-reverse;
+}
+
+.info {
+	display: flex;
+	flex-direction: column;
+	width: 500px;
+}
+
+.name {
+	font-size: 2rem;
+}
+
+.year {
+
+}
+
+.status {
+
+}
+
+.links {
+	display: flex;
+	gap: 10px;
+}
+
+.live {
+
+}
+
+.deploy {
+	
+}
+
+.tools {
+	display: flex;
+	gap: 10px;
+}
+
+.tool {
+	
+}
+
+.description {
+
+}
+
+.contributors {
+	display: flex;
+	gap: 10px;
+}
+
+.contributor {
+
+}
+
+.images {
+	display: flex;
+	height: 100%;
+	width: 500px;
+	overflow-x: scroll;
+	scroll-snap-type: x mandatory;
+	scroll-behavior: smooth;
+	-webkit-overflow-scrolling: touch;
+}
+
+.image {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	min-width: 100%;
+	padding: 10px;
+	scroll-snap-align: start;
+}
+
+.image > img {
+	height: 100%;
 }

@@ -1,19 +1,18 @@
 import styles from "@/styles/page.module.css";
 import ProjectView from "@/components/ProjectView";
 import {projects} from "@/lib/projects";
-import React from "react";
 
 export default function Page() {
 	return (
 		<div className={styles.page}>
 			<main className={styles.main}>
 				<div className={styles.title}>
-					<h1 className={styles.titleText}>title</h1>
+					<h1>title</h1>
 				</div>
-				{projects.map((p, i) => <React.Fragment key={i}>{ProjectView(p)}</React.Fragment>)}
+				{projects.map((p, i) => <ProjectView project={p} index={i} key={i}></ProjectView>)}
 			</main>
 			<footer className={styles.footer}>
-				<p className={styles.footerText}>footer</p>
+				<p>footer</p>
 			</footer>
 		</div>
 	);
