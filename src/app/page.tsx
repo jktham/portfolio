@@ -1,3 +1,5 @@
+"use client";
+
 import styles from "@/styles/page.module.css";
 import ProjectView from "@/components/ProjectView";
 import {projects} from "@/lib/projects";
