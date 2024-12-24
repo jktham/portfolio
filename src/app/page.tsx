@@ -9,7 +9,7 @@ export default function Page() {
 		<div className={styles.page}>
 			<main className={styles.main}>
 				<div className={styles.title}>
-					<h1>title</h1>
+					<h1>stuff</h1>
 				</div>
 				{projects.map((p, i) => <ProjectView project={p} index={i} key={i}></ProjectView>)}
 			</main>

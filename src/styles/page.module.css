@@ -21,11 +21,11 @@
 	width: 100%;
 	align-items: center;
 	justify-content: center;
-	background-color: blue;
+	background-color: var(--bg1);
 }
 
 .title > h1 {
-	font-size: 3rem;
+	font-size: 4rem;
 }
 
 .footer {
@@ -35,7 +35,7 @@
 	align-items: center;
 	justify-content: center;
 	height: 2rem;
-	background-color: green;
+	background-color: var(--bg2);
 }
 
 .footer > p {

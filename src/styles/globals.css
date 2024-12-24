@@ -3,7 +3,16 @@
 
 :root {
 	--fg: #ffffff;
-	--bg: #171717;
+	--bg1: #000000;
+	--bg2: #121212;
+	--tool: #313131;
+	--contributor: #6d1f70;
+	--repo: #233199;
+	--live: #207b2e;
+}
+
+html {
+	font-size: 1rem;
 }
 
 html, body {
@@ -13,7 +22,7 @@ html, body {
 
 body {
 	color: var(--fg);
-	background: var(--bg);
+	background: var(--bg1);
 	font-family: "Roboto", Arial, Helvetica, sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
