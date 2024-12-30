@@ -4,16 +4,17 @@
 	align-items: center;
 	justify-content: center;
 	background-color: var(--bg2);
-	margin: 0 20px;
-	padding: 20px;
-	height: 300px;
-	max-width: 1200px;
-	gap: 20px;
+	padding: 1rem;
+	height: 19rem;
+	max-width: 75rem;
+	gap: 1rem;
 	flex-direction: row;
+	align-self: flex-start;
 }
 
 .reverse {
 	flex-direction: row-reverse;
+	align-self: flex-end;
 }
 
 .info {
@@ -24,7 +25,7 @@
 	width: 0;
 	align-items: end;
 	text-align: end;
-	gap: 6px;
+	gap: 0.5rem;
 	overflow: scroll;
 	scrollbar-width: none;
 }
@@ -69,7 +70,7 @@
 	height: 1rem;
 	line-height: 1rem;
 	display: flex;
-	gap: 6px;
+	gap: 0.5rem;
 }
 
 .year {
@@ -82,16 +83,17 @@
 }
 
 .status > span {
-	margin-right: 6px;
+	margin-right: 0.5rem;
 	line-height: 1rem;
 	font-size: 1.25rem;
+	max-width: 1.25rem;
 }
 
 .tools {
 	height: 1.4rem;
 	line-height: 1.4rem;
 	display: flex;
-	gap: 6px;
+	gap: 0.5rem;
 	flex-wrap: wrap;
 	height: auto;
 	justify-content: flex-end;
@@ -102,7 +104,7 @@
 }
 
 .tool {
-	padding: 0 6px;
+	padding: 0 0.5rem;
 	background-color: var(--tool);
 }
 
@@ -121,7 +123,7 @@
 	line-height: 1.4rem;
 	display: flex;
 	align-items: center;
-	gap: 6px 6px;
+	gap: 0.5rem;
 	flex-wrap: wrap;
 	height: auto;
 	justify-content: flex-end;
@@ -132,7 +134,7 @@
 }
 
 .contributor {
-	padding: 0 6px;
+	padding: 0 0.5rem;
 	background-color: var(--contributor);
 	display: flex;
 	white-space: nowrap;
@@ -140,16 +142,17 @@
 }
 
 .contributor > span {
-	margin-right: 4px;
+	margin-right: 0.3rem;
 	line-height: 1.4rem;
 	font-size: 1.25rem;
+	max-width: 1.25rem;
 }
 
 .links {
 	height: 2rem;
 	line-height: 2rem;
 	display: flex;
-	gap: 6px;
+	gap: 0.5rem;
 	flex-wrap: wrap;
 	height: auto;
 	justify-content: flex-end;
@@ -160,15 +163,16 @@
 }
 
 .links > a {
-	padding: 0 8px;
+	padding: 0 0.5rem;
 	display: flex;
 	align-items: center;
 }
 
 .links > a > span {
-	margin-right: 6px;
+	margin-right: 0.5rem;
 	line-height: 2rem;
 	font-size: 1.5rem;
+	max-width: 1.5rem;
 }
 
 .repo {
@@ -182,7 +186,7 @@
 @media only screen and (max-width: 768px) {
 	.projectView {
 		flex-direction: column-reverse;
-		height: 600px;
+		height: 39rem;
 	}
 	.info {
 		width: 100%;
