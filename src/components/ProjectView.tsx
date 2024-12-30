@@ -19,7 +19,7 @@ export default function ProjectView({project, index}: {project: Project; index: 
 				{(project.tools.length > 0) && <div className={styles.tools}>
 					{project.tools.map((tool, i) => <div className={styles.tool} key={i}>{tool}</div>)}
 				</div>}
-				{project.description && <div className={styles.description}>{project.description}</div>}
+				{<div className={styles.description}>{project.description}</div>}
 				{(project.repo || project.live) && <div className={styles.links}>
 					{project.repo && <a className={styles.repo} href={project.repo}><span className="material-symbols-outlined">Code</span>GitHub</a>}
 					{project.live && <a className={styles.live} href={project.live}><span className="material-symbols-outlined">Public</span>{project.live.split("https://")[1]}</a>}
