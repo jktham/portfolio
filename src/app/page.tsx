@@ -14,7 +14,7 @@ export default function Page() {
 				{projects.map((p, i) => <ProjectView project={p} index={i} key={i}></ProjectView>)}
 			</main>
 			<footer className={styles.footer}>
-				<p>footer</p>
+				<p>{"<3"}</p>
 			</footer>
 		</div>
 	);

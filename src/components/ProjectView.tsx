@@ -2,10 +2,11 @@ import {Project} from "@/lib/projects";
 import styles from "@/styles/ProjectView.module.css"
 import nextConfig from "../../next.config";
 import {Swiper, SwiperSlide} from "swiper/react";
-import {Navigation, Pagination, Autoplay, Mousewheel} from "swiper/modules";
+import {Navigation, Pagination, Autoplay, Mousewheel, Zoom} from "swiper/modules";
 import "swiper/css";
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import 'swiper/css/zoom';
 
 export default function ProjectView({project, index}: {project: Project; index: number}) {
 	return (
@@ -30,17 +31,21 @@ export default function ProjectView({project, index}: {project: Project; index: 
 			</div>
 			<div className={styles.images}>
 				<Swiper 
-					modules={[Navigation, Pagination, Autoplay, Mousewheel]} 
+					modules={[Navigation, Pagination, Autoplay, Mousewheel, Zoom]} 
 					navigation={false} 
 					pagination={{clickable: true}} 
 					loop={true} 
 					autoplay={{delay: 4000, disableOnInteraction: false}} 
 					spaceBetween={20} 
 					mousewheel={true} 
+					zoom={true} 
+					onInit={(swiper) => {swiper.autoplay.stop(); setTimeout(() => swiper.autoplay.start(), index * 100)}} 
+					onZoomChange={(swiper, scale) => scale == 1 ? swiper.autoplay?.start() : swiper.autoplay?.stop()} 
+					onSlideChange={(swiper) => swiper.zoom?.out()}
 				>
 					{project.images.map((image, i) => 
 						<SwiperSlide key={i}>
-							<div className={styles.image}>
+							<div className={`${styles.image} swiper-zoom-container`}>
 								<img src={`${nextConfig.basePath}/${image}`}></img>
 							</div>
 						</SwiperSlide>
