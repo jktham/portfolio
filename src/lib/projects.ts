@@ -159,6 +159,23 @@ export let projects: Project[] = [{
 			link: "https://github.com/jktham",
 		}],
 	}, {
+		name: "9 to 5 Simulator",
+		description: "VR game that immerses you in the realtime experience of a full shift at Tasty Burgers™.",
+		year: "2024",
+		status: "Done",
+		statusIcon: "done",
+		repo: "https://github.com/jktham/9-to-5-simulator",
+		live: "",
+		tools: ["C#", "Unity", "Blender"],
+		images: ["9to5simulator/1.jpg", "9to5simulator/2.jpg", "9to5simulator/3.jpg"],
+		contributors: [{
+			name: "Jonas Tham",
+			link: "https://github.com/jktham",
+		}, {
+			name: "Martin Shen",
+			link: "https://github.com/AMOGUS-SUSSY",
+		}],
+	}, {
 		name: "Spot",
 		description: "Very basic TUI spotify client.",
 		year: "2024",
@@ -188,7 +205,7 @@ export let projects: Project[] = [{
 		}],
 	}, {
 		name: "Bapple",
-		description: "Bad apple on FPGA using SPI display.",
+		description: "Bad apple on FPGA using an SPI display.",
 		year: "2023",
 		status: "Done",
 		statusIcon: "done",
