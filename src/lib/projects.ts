@@ -25,17 +25,17 @@ export let projects: Project[] = [{
 		tools: ["TypeScript", "React", "NextJS"],
 		images: ["tramzone/lines.jpg", "tramzone/info.jpg", "tramzone/far.jpg", "tramzone/mobile.jpg"],
 		contributors: [{
-			name: "Alec Franco",
-			link: "https://github.com/srpnt3",
-		}, {
-			name: "Alexis Elisseeff",
+			name: "alexiselisseefff",
 			link: "https://github.com/alexiselisseeff",
 		}, {
-			name: "Jonas Tham",
+			name: "amogus-sussy",
+			link: "https://github.com/AMOGUS-SUSSY",
+		}, {
+			name: "jktham",
 			link: "https://github.com/jktham",
 		}, {
-			name: "Martin Shen",
-			link: "https://github.com/AMOGUS-SUSSY",
+			name: "srpnt3",
+			link: "https://github.com/srpnt3",
 		}],
 	}, {
 		name: "Rivulet",
@@ -48,11 +48,11 @@ export let projects: Project[] = [{
 		tools: ["JavaScript", "HTML/CSS", "Express"],
 		images: ["rivulet/home.jpg", "rivulet/bebop.jpg"],
 		contributors: [{
-			name: "Alec Franco",
-			link: "https://github.com/srpnt3",
-		}, {
-			name: "Jonas Tham",
+			name: "jktham",
 			link: "https://github.com/jktham",
+		}, {
+			name: "srpnt3",
+			link: "https://github.com/srpnt3",
 		}],
 	}, {
 		name: "Eudox",
@@ -65,7 +65,7 @@ export let projects: Project[] = [{
 		tools: ["C++", "GLSL", "OpenGL"],
 		images: ["eudox/1.jpg", "eudox/2.jpg", "eudox/3.jpg", "eudox/4.jpg", "eudox/5.jpg", "eudox/6.jpg", "eudox/7.jpg", "eudox/8.jpg"],
 		contributors: [{
-			name: "Jonas Tham",
+			name: "jktham",
 			link: "https://github.com/jktham",
 		}],
 	}, {
@@ -79,7 +79,7 @@ export let projects: Project[] = [{
 		tools: ["C++", "GLSL", "OpenGL"],
 		images: ["euclid/1.jpg", "euclid/2.jpg", "euclid/3.jpg", "euclid/4.jpg", "euclid/5.jpg", "euclid/6.jpg", "euclid/7.jpg"],
 		contributors: [{
-			name: "Jonas Tham",
+			name: "jktham",
 			link: "https://github.com/jktham",
 		}],
 	}, {
@@ -93,7 +93,7 @@ export let projects: Project[] = [{
 		tools: ["C++", "OpenGL"],
 		images: ["blockgame/1.jpg", "blockgame/2.jpg", "blockgame/3.jpg", "blockgame/4.jpg", "blockgame/5.jpg", ],
 		contributors: [{
-			name: "Jonas Tham",
+			name: "jktham",
 			link: "https://github.com/jktham",
 		}],
 	}, {
@@ -107,13 +107,13 @@ export let projects: Project[] = [{
 		tools: ["JavaScript", "React", "NextJS"],
 		images: ["rivulet2/1.jpg", "rivulet2/2.jpg"],
 		contributors: [{
-			name: "Alec Franco",
-			link: "https://github.com/srpnt3",
-		}, {
-			name: "Jonas Tham",
+			name: "jktham",
 			link: "https://github.com/jktham",
 		}, {
-			name: "Mark",
+			name: "srpnt3",
+			link: "https://github.com/srpnt3",
+		}, {
+			name: "the-simple-mark",
 			link: "https://github.com/THE-SIMPLE-MARK",
 		}],
 	}, {
@@ -127,7 +127,7 @@ export let projects: Project[] = [{
 		tools: ["Python", "PyQt5"],
 		images: ["decSat/1.jpg", "decSat/2.jpg", "decSat/3.jpg", "decSat/4.jpg", "decSat/5.jpg"],
 		contributors: [{
-			name: "Jonas Tham",
+			name: "jktham",
 			link: "https://github.com/jktham",
 		}],
 	}, {
@@ -141,7 +141,7 @@ export let projects: Project[] = [{
 		tools: ["C++", "OpenGL"],
 		images: ["helios/1.jpg", "helios/2.jpg", "helios/3.jpg", "helios/4.jpg"],
 		contributors: [{
-			name: "Jonas Tham",
+			name: "jktham",
 			link: "https://github.com/jktham",
 		}],
 	}, {
@@ -155,7 +155,7 @@ export let projects: Project[] = [{
 		tools: ["Java", "LWJGL"],
 		images: ["faketorio/1.jpg", "faketorio/2.jpg", "faketorio/3.jpg"],
 		contributors: [{
-			name: "Jonas Tham",
+			name: "jktham",
 			link: "https://github.com/jktham",
 		}],
 	}, {
@@ -169,11 +169,11 @@ export let projects: Project[] = [{
 		tools: ["C#", "Unity", "Blender"],
 		images: ["9to5simulator/1.jpg", "9to5simulator/2.jpg", "9to5simulator/3.jpg"],
 		contributors: [{
-			name: "Jonas Tham",
-			link: "https://github.com/jktham",
-		}, {
-			name: "Martin Shen",
+			name: "amogus-sussy",
 			link: "https://github.com/AMOGUS-SUSSY",
+		}, {
+			name: "jktham",
+			link: "https://github.com/jktham",
 		}],
 	}, {
 		name: "Spot",
@@ -186,7 +186,7 @@ export let projects: Project[] = [{
 		tools: ["Rust", "crossterm"],
 		images: ["spot/1.jpg"],
 		contributors: [{
-			name: "Jonas Tham",
+			name: "jktham",
 			link: "https://github.com/jktham",
 		}],
 	}, {
@@ -200,7 +200,7 @@ export let projects: Project[] = [{
 		tools: ["C++", "C", "Teensy41"],
 		images: ["cgtr/1.jpg", "cgtr/2.jpg"],
 		contributors: [{
-			name: "Jonas Tham",
+			name: "jktham",
 			link: "https://github.com/jktham",
 		}],
 	}, {
@@ -214,11 +214,11 @@ export let projects: Project[] = [{
 		tools: ["Verilog", "FPGA"],
 		images: ["bapple/1.jpg", "bapple/2.jpg"],
 		contributors: [{
-			name: "Alec Franco",
-			link: "https://github.com/srpnt3",
-		}, {
-			name: "Jonas Tham",
+			name: "jktham",
 			link: "https://github.com/jktham",
+		}, {
+			name: "srpnt3",
+			link: "https://github.com/srpnt3",
 		}],
 	}, {
 		name: "GregOS",
@@ -231,13 +231,13 @@ export let projects: Project[] = [{
 		tools: ["Lua", "OpenComputers"],
 		images: ["gregOS/1.jpg", "gregOS/2.jpg", "gregOS/3.jpg", "gregOS/4.jpg", "gregOS/5.jpg"],
 		contributors: [{
-			name: "Jonas Tham",
+			name: "jktham",
 			link: "https://github.com/jktham",
 		}],
 	}, {
 		name: "Portfolio",
 		description: "That's this :)",
-		year: "2024",
+		year: "2024-2025",
 		status: "In Progress",
 		statusIcon: "more_horiz",
 		repo: "https://github.com/jktham/portfolio",
@@ -245,7 +245,7 @@ export let projects: Project[] = [{
 		tools: ["TypeScript", "React", "NextJS"],
 		images: ["portfolio/main.jpg"],
 		contributors: [{
-			name: "Jonas Tham",
+			name: "jktham",
 			link: "https://github.com/jktham",
 		}],
 	},
