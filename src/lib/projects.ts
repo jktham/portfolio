@@ -14,7 +14,7 @@ export type Project = {
 	}[];
 }
 
-export let projects: Project[] = [{
+export const projects: Project[] = [{
 		name: "Tramzone",
 		description: "Live location tracker for trams in Zurich, based on GTFS timetable and realtime updates.",
 		year: "2024",
