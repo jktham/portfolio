@@ -5,7 +5,7 @@ import {Project} from "@/lib/projects";
 import styles from "@/styles/ProjectView.module.css"
 import nextConfig from "../../next.config";
 import {Swiper, SwiperSlide} from "swiper/react";
-import {Navigation, Pagination, Autoplay, Mousewheel, Zoom} from "swiper/modules";
+import {Navigation, Pagination, Autoplay, Mousewheel, Zoom, Manipulation} from "swiper/modules";
 import "swiper/css";
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -34,7 +34,7 @@ export default function ProjectView({project, index}: {project: Project; index: 
 			</div>
 			<div className={styles.images}>
 				<Swiper 
-					modules={[Navigation, Pagination, Autoplay, Mousewheel, Zoom]} 
+					modules={[Navigation, Pagination, Autoplay, Mousewheel, Zoom, Manipulation]} 
 					navigation={false} 
 					pagination={{clickable: true}} 
 					loop={project.images.length > 1 && true} 
@@ -42,10 +42,26 @@ export default function ProjectView({project, index}: {project: Project; index: 
 					spaceBetween={20} 
 					mousewheel={true} 
 					zoom={true} 
-					onInit={(swiper) => {swiper?.autoplay?.stop(); setTimeout(() => swiper?.autoplay?.start(), index * 100)}} 
-					onZoomChange={(swiper, scale) => scale == 1 ? swiper?.autoplay?.start() : swiper?.autoplay?.stop()} 
-					onSlideChange={(swiper) => swiper?.slides?.[0] && swiper?.zoom?.out()}
+					onAfterInit={(swiper) => {
+						swiper?.removeSlide(0);
+						swiper?.update();
+						swiper?.slideTo(0, 0, false);
+						swiper?.autoplay?.stop();
+						setTimeout(() => swiper?.autoplay?.start(), index * 100 + 1000);
+					}} 
+					onZoomChange={(swiper, scale) => 
+						scale == 1 ? swiper?.autoplay?.start() : swiper?.autoplay?.stop()
+					} 
+					onSlideChange={(swiper) => 
+						swiper?.slides?.[0] && swiper?.zoom?.out()
+					}
 				>
+					<SwiperSlide>
+						<div className={`${styles.image} swiper-zoom-container`}>
+							<img src={`${nextConfig.basePath}/blank.jpg`} alt="" loading="eager"></img>
+						</div>
+						<div className="swiper-lazy-preloader"></div>
+					</SwiperSlide>
 					{project.images.map((image, i) => 
 						<SwiperSlide key={i}>
 							<div className={`${styles.image} swiper-zoom-container`}>
