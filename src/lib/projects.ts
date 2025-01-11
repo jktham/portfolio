@@ -17,7 +17,7 @@ export type Project = {
 export const projects: Project[] = [{
 		name: "Tramzone",
 		description: "Live location tracker for trams in Zurich, based on GTFS timetable and realtime updates.",
-		year: "2024",
+		year: "2024-2025",
 		status: "In Progress",
 		statusIcon: "more_horiz",
 		repo: "https://github.com/jktham/tramzone",
@@ -230,6 +230,20 @@ export const projects: Project[] = [{
 		live: "",
 		tools: ["Lua", "OpenComputers"],
 		images: ["gregOS/1.jpg", "gregOS/2.jpg", "gregOS/3.jpg", "gregOS/4.jpg", "gregOS/5.jpg"],
+		contributors: [{
+			name: "jktham",
+			link: "https://github.com/jktham",
+		}],
+	}, {
+		name: "Omni",
+		description: "Journal / mood tracker thing.",
+		year: "2025",
+		status: "In Progress",
+		statusIcon: "more_horiz",
+		repo: "https://github.com/jktham/omni",
+		live: "https://omni.herokuapp.com",
+		tools: ["TypeScript", "React", "React Router"],
+		images: ["omni/1.jpg", "omni/2.jpg"],
 		contributors: [{
 			name: "jktham",
 			link: "https://github.com/jktham",
