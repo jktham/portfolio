@@ -254,8 +254,8 @@ export const projects: Project[] = [{
 		year: "2024-2025",
 		status: "In Progress",
 		statusIcon: "more_horiz",
-		repo: "https://github.com/jktham/portfolio",
-		live: "https://jktham.github.io/portfolio",
+		repo: "https://github.com/jktham/jktham.github.io",
+		live: "https://jktham.github.io",
 		tools: ["TypeScript", "React", "NextJS"],
 		images: ["portfolio/main.jpg"],
 		contributors: [{

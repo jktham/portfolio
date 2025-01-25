@@ -1,7 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  basePath: "/portfolio",
+  basePath: "",
   output: "export",
   experimental: { esmExternals: true },
 };
