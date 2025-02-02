@@ -131,6 +131,20 @@ export const projects: Project[] = [{
 			link: "https://github.com/jktham",
 		}],
 	}, {
+		name: "Omni",
+		description: "Journal / mood tracker thing.",
+		year: "2025",
+		status: "In Progress",
+		statusIcon: "more_horiz",
+		repo: "https://github.com/jktham/omni",
+		live: "https://omni.herokuapp.com",
+		tools: ["TypeScript", "React", "React Router"],
+		images: ["omni/1.jpg", "omni/2.jpg", "omni/3.jpg"],
+		contributors: [{
+			name: "jktham",
+			link: "https://github.com/jktham",
+		}],
+	}, {
 		name: "Helios",
 		description: "Solar system \"\"\"simulation\"\"\".",
 		year: "2022",
@@ -198,7 +212,7 @@ export const projects: Project[] = [{
 		repo: "https://github.com/jktham/cgtr",
 		live: "",
 		tools: ["C++", "C", "Teensy41"],
-		images: ["cgtr/1.jpg", "cgtr/2.jpg"],
+		images: ["cgtr/1.jpg"],
 		contributors: [{
 			name: "jktham",
 			link: "https://github.com/jktham",
@@ -229,21 +243,7 @@ export const projects: Project[] = [{
 		repo: "https://github.com/jktham/gregOS",
 		live: "",
 		tools: ["Lua", "OpenComputers"],
-		images: ["gregOS/1.jpg", "gregOS/2.jpg", "gregOS/3.jpg", "gregOS/4.jpg", "gregOS/5.jpg"],
-		contributors: [{
-			name: "jktham",
-			link: "https://github.com/jktham",
-		}],
-	}, {
-		name: "Omni",
-		description: "Journal / mood tracker thing.",
-		year: "2025",
-		status: "In Progress",
-		statusIcon: "more_horiz",
-		repo: "https://github.com/jktham/omni",
-		live: "https://omni.herokuapp.com",
-		tools: ["TypeScript", "React", "React Router"],
-		images: ["omni/1.jpg", "omni/2.jpg"],
+		images: ["gregOS/1.jpg", "gregOS/3.jpg", "gregOS/5.jpg"],
 		contributors: [{
 			name: "jktham",
 			link: "https://github.com/jktham",
