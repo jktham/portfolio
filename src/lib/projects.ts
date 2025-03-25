@@ -25,7 +25,7 @@ export const projects: Project[] = [{
 		tools: ["TypeScript", "React", "NextJS"],
 		images: ["tramzone/lines.jpg", "tramzone/info.jpg", "tramzone/far.jpg", "tramzone/mobile.jpg"],
 		contributors: [{
-			name: "alexiselisseefff",
+			name: "alexiselisseeff",
 			link: "https://github.com/alexiselisseeff",
 		}, {
 			name: "amogus-sussy",
@@ -233,6 +233,20 @@ export const projects: Project[] = [{
 		}, {
 			name: "srpnt3",
 			link: "https://github.com/srpnt3",
+		}],
+	}, {
+		name: "mlib",
+		description: "TUI local media browser.",
+		year: "2025",
+		status: "In Progress",
+		statusIcon: "more_horiz",
+		repo: "https://github.com/jktham/mlib",
+		live: "",
+		tools: ["Rust", "crossterm"],
+		images: ["mlib/1.jpg"],
+		contributors: [{
+			name: "jktham",
+			link: "https://github.com/jktham",
 		}],
 	}, {
 		name: "GregOS",
