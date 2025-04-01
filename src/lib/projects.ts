@@ -69,6 +69,20 @@ export const projects: Project[] = [{
 			link: "https://github.com/jktham",
 		}],
 	}, {
+		name: "Exo",
+		description: "Low res 3D spaceflight sim inspired by Elite (1984).",
+		year: "2025",
+		status: "In Progress",
+		statusIcon: "more_horiz",
+		repo: "https://github.com/jktham/exo",
+		live: "https://exo83-7941c379d9b6.herokuapp.com",
+		tools: ["Rust", "pixels-rs"],
+		images: ["exo/1.jpg"],
+		contributors: [{
+			name: "jktham",
+			link: "https://github.com/jktham",
+		}],
+	}, {
 		name: "Euclid",
 		description: "Basic raytracer in OpenGL.",
 		year: "2023",
