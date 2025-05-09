@@ -70,12 +70,12 @@ export const projects: Project[] = [{
 		}],
 	}, {
 		name: "Exo",
-		description: "Low res 3D spaceflight sim inspired by Elite (1984). Draws directly to framebuffer.",
+		description: "Low res 3D spaceflight sim inspired by Elite (1984). Draws directly to framebuffer, runs in browser via wasm.",
 		year: "2025",
 		status: "In Progress",
 		statusIcon: "more_horiz",
 		repo: "https://github.com/jktham/exo",
-		live: "https://exo83-7941c379d9b6.herokuapp.com",
+		live: "https://exo.jktham.dev",
 		tools: ["Rust", "pixels-rs"],
 		images: ["exo/1.png", "exo/2.png", "exo/3.png"],
 		contributors: [{
@@ -151,7 +151,7 @@ export const projects: Project[] = [{
 		status: "In Progress",
 		statusIcon: "more_horiz",
 		repo: "https://github.com/jktham/omni",
-		live: "https://omni.herokuapp.com",
+		live: "https://omni.jktham.dev",
 		tools: ["TypeScript", "React", "React Router"],
 		images: ["omni/4.jpg", "omni/1.jpg", "omni/2.jpg", "omni/3.jpg"],
 		contributors: [{
