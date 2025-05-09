@@ -283,7 +283,7 @@ export const projects: Project[] = [{
 		status: "In Progress",
 		statusIcon: "more_horiz",
 		repo: "https://github.com/jktham/jktham.github.io",
-		live: "https://jktham.github.io",
+		live: "https://jktham.dev",
 		tools: ["TypeScript", "React", "NextJS"],
 		images: ["portfolio/main.jpg"],
 		contributors: [{
