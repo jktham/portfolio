@@ -70,7 +70,7 @@ export const projects: Project[] = [{
 		}],
 	}, {
 		name: "Ambi",
-		description: "Yet another engine, this time with WebGPU^^. Trying out more cohesive scenes and visual styles.",
+		description: "Another engine^^. Trying out more cohesive scenes and visual styles.",
 		year: "2025",
 		status: "In Progress",
 		statusIcon: "more_horiz",
@@ -97,6 +97,54 @@ export const projects: Project[] = [{
 			link: "https://github.com/jktham",
 		}],
 	}, {
+		name: "Spot",
+		description: "Basic little TUI spotify client.",
+		year: "2024",
+		status: "In Progress",
+		statusIcon: "more_horiz",
+		repo: "https://github.com/jktham/spot",
+		live: undefined,
+		tools: ["Rust", "crossterm"],
+		images: ["spot/1.jpg"],
+		contributors: [{
+			name: "jktham",
+			link: "https://github.com/jktham",
+		}],
+	}, {
+		name: "DecSat",
+		description: "Tool to decode NOAA weather satellite image transmissions.",
+		year: "2021",
+		status: "Done",
+		statusIcon: "done",
+		repo: "https://github.com/jktham/decSat",
+		live: undefined,
+		tools: ["Python", "PyQt5"],
+		images: ["decSat/1.jpg", "decSat/2.jpg", "decSat/3.jpg", "decSat/4.jpg", "decSat/5.jpg"],
+		contributors: [{
+			name: "jktham",
+			link: "https://github.com/jktham",
+		}],
+	}, {
+		name: "Bapple",
+		description: "Bad apple on FPGA using an SPI display.",
+		year: "2023",
+		status: "Done",
+		statusIcon: "done",
+		repo: "https://github.com/jktham/bapple",
+		live: undefined,
+		tools: ["Verilog", "FPGA"],
+		images: ["bapple/1.jpg", "bapple/2.jpg"],
+		contributors: [{
+			name: "jktham",
+			link: "https://github.com/jktham",
+		}, {
+			name: "srpnt3",
+			link: "https://github.com/srpnt3",
+		}],
+	}
+];
+
+export const moreProjects: Project[] = [{
 		name: "Euclid",
 		description: "Rudimentary OpenGL raytracer, capable of rendering primitives with phong shading.",
 		year: "2023",
@@ -125,6 +173,20 @@ export const projects: Project[] = [{
 			link: "https://github.com/jktham",
 		}],
 	}, {
+		name: "Omni",
+		description: "Journal / mood tracker thing.",
+		year: "2025",
+		status: "In Progress",
+		statusIcon: "more_horiz",
+		repo: "https://github.com/jktham/omni",
+		live: "https://omni.jktham.dev",
+		tools: ["TypeScript", "React", "React Router"],
+		images: ["omni/4.jpg", "omni/1.jpg", "omni/2.jpg", "omni/3.jpg"],
+		contributors: [{
+			name: "jktham",
+			link: "https://github.com/jktham",
+		}],
+	}, {
 		name: "Rivulet v2",
 		description: "Redesign and migration to NextJS.",
 		year: "2024",
@@ -143,34 +205,6 @@ export const projects: Project[] = [{
 		}, {
 			name: "the-simple-mark",
 			link: "https://github.com/THE-SIMPLE-MARK",
-		}],
-	}, {
-		name: "DecSat",
-		description: "Tool to decode NOAA weather satellite image transmissions.",
-		year: "2021",
-		status: "Done",
-		statusIcon: "done",
-		repo: "https://github.com/jktham/decSat",
-		live: undefined,
-		tools: ["Python", "PyQt5"],
-		images: ["decSat/1.jpg", "decSat/2.jpg", "decSat/3.jpg", "decSat/4.jpg", "decSat/5.jpg"],
-		contributors: [{
-			name: "jktham",
-			link: "https://github.com/jktham",
-		}],
-	}, {
-		name: "Omni",
-		description: "Journal / mood tracker thing.",
-		year: "2025",
-		status: "In Progress",
-		statusIcon: "more_horiz",
-		repo: "https://github.com/jktham/omni",
-		live: "https://omni.jktham.dev",
-		tools: ["TypeScript", "React", "React Router"],
-		images: ["omni/4.jpg", "omni/1.jpg", "omni/2.jpg", "omni/3.jpg"],
-		contributors: [{
-			name: "jktham",
-			link: "https://github.com/jktham",
 		}],
 	}, {
 		name: "Helios",
@@ -218,20 +252,6 @@ export const projects: Project[] = [{
 			link: "https://github.com/jktham",
 		}],
 	}, {
-		name: "Spot",
-		description: "Very basic TUI spotify client.",
-		year: "2024",
-		status: "In Progress",
-		statusIcon: "more_horiz",
-		repo: "https://github.com/jktham/spot",
-		live: undefined,
-		tools: ["Rust", "crossterm"],
-		images: ["spot/1.jpg"],
-		contributors: [{
-			name: "jktham",
-			link: "https://github.com/jktham",
-		}],
-	}, {
 		name: "CGTR",
 		description: "Guitar preamp and DSP based on the Teensy 4.1 audio board.",
 		year: "2024",
@@ -244,23 +264,6 @@ export const projects: Project[] = [{
 		contributors: [{
 			name: "jktham",
 			link: "https://github.com/jktham",
-		}],
-	}, {
-		name: "Bapple",
-		description: "Bad apple on FPGA using an SPI display.",
-		year: "2023",
-		status: "Done",
-		statusIcon: "done",
-		repo: "https://github.com/jktham/bapple",
-		live: undefined,
-		tools: ["Verilog", "FPGA"],
-		images: ["bapple/1.jpg", "bapple/2.jpg"],
-		contributors: [{
-			name: "jktham",
-			link: "https://github.com/jktham",
-		}, {
-			name: "srpnt3",
-			link: "https://github.com/srpnt3",
 		}],
 	}, {
 		name: "mlib",
@@ -305,4 +308,4 @@ export const projects: Project[] = [{
 			link: "https://github.com/jktham",
 		}],
 	},
-]
+];

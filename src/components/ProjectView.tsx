@@ -13,7 +13,7 @@ import 'swiper/css/zoom';
 
 export default function ProjectView({project, index}: {project: Project; index: number}) {
 	return (
-		<div className={index % 2 == 0 ? `${styles.projectView} ${styles.reverse}` : styles.projectView}>
+		<div className={(index % 2 == 0 ? `${styles.projectView} ${styles.reverse}` : styles.projectView)}>
 			<div className={styles.info}>
 				{project.name && <div className={styles.name}>{project.name}</div>}
 				{(project.year || project.status) && <div className={styles.subtitle}>
@@ -42,8 +42,10 @@ export default function ProjectView({project, index}: {project: Project; index: 
 					spaceBetween={20} 
 					mousewheel={true} 
 					zoom={true} 
-					onAfterInit={(swiper) => {
-						swiper?.removeSlide(0);
+					onAfterInit={(swiper) => { // breaks state on rerender :/
+						if (swiper.slides.length > project.images.length) {
+							swiper?.removeSlide(0);
+						}
 						swiper?.update();
 						swiper?.slideTo(0, 0, false);
 						swiper?.autoplay?.stop();

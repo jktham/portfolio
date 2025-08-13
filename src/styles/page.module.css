@@ -43,3 +43,23 @@
 .footer > p {
 	font-size: 1rem;
 }
+
+.moreButton {
+	all: unset;
+	height: 2rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0 1rem;
+	padding-left: 1.25rem;
+	font-size: 1rem;
+	cursor: pointer;
+	background-color: var(--bg2);
+}
+
+.moreButton > span {
+	margin-left: 0.5rem;
+	line-height: 3rem;
+	font-size: 1.5rem;
+	max-width: 1.5rem;
+}
