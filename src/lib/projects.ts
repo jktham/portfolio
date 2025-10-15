@@ -301,7 +301,7 @@ export const moreProjects: Project[] = [{
 		statusIcon: "more_horiz",
 		repo: "https://github.com/jktham/jktham.github.io",
 		live: "https://jktham.dev",
-		tools: ["TypeScript", "React", "NextJS"],
+		tools: ["TypeScript", "Vue"],
 		images: ["portfolio/main.jpg"],
 		contributors: [{
 			name: "jktham",
