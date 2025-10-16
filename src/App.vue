@@ -17,7 +17,7 @@
   </header>
   <main>
     <Project v-for="(project, index) in projects" :project :index></Project>
-    <Project v-if="showMore" v-for="(project, index) in moreProjects" :project :index></Project>
+    <Project v-if="showMore" v-for="(project, index) in moreProjects" :project :index="projects.length + index"></Project>
 
     <button v-if="!showMore" class="more" @click="toggleMore">
       <span class="label">More</span><Icon>keyboard_arrow_down</Icon>

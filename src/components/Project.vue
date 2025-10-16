@@ -60,6 +60,7 @@
         :spaceBetween="20"
         :mousewheel="true"
         :zoom="true"
+        :lazy-preload-prev-next="1"
         :onAfterInit="swiperOnAfterInit"
         :onZoomChange="swiperOnZoomChange"
         :onSlideChange="swiperOnSlideChange"
@@ -120,11 +121,15 @@
   }
 
   .images {
-    display: flex;
     height: 100%;
     flex: 1 1 0;
     width: 0;
     background-color: var(--bg1);
+  }
+
+  .swiper {
+    height: 100%;
+    width: 100%;
   }
 
   .image {
