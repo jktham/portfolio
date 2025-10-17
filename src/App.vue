@@ -20,10 +20,10 @@
     <Project v-if="showMore" v-for="(project, index) in moreProjects" :project :index="projects.length + index"></Project>
 
     <button v-if="!showMore" class="more" @click="toggleMore">
-      <span class="label">More</span><Icon>keyboard_arrow_down</Icon>
+      More<Icon>keyboard_arrow_down</Icon>
     </button>
     <button v-else class="more" @click="toggleMore">
-      <span class="label">Less</span><Icon>keyboard_arrow_up</Icon>
+      Less<Icon>keyboard_arrow_up</Icon>
     </button>
   </main>
   <footer>
@@ -48,7 +48,6 @@
     height: 13rem;
     width: 100%;
     padding-top: 1rem;
-    background-color: var(--bg1);
 
     .title {
 	    font-size: 4rem;
@@ -67,33 +66,24 @@
     padding: 1rem;
 
     .more {
-      all: unset;
-      height: 2rem;
       display: flex;
       align-items: center;
       justify-content: center;
+      height: 2rem;
+      gap: 0.5rem;
       padding: 0 1rem;
-      padding-left: 1.25rem;
-      font-size: 1rem;
+      padding-right: 0.7rem;
       cursor: pointer;
       background-color: var(--bg2);
-    }
 
-    .more > .label {
-      width: 2.4rem;
-    }
-
-    .more > .icon {
-      margin-left: 0.5rem;
-      line-height: 3rem;
-      font-size: 1.5rem;
-      max-width: 1.5rem;
+      .icon {
+        font-size: 1.5rem;
+      }
     }
   }
 
   footer {
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
     height: 2rem;

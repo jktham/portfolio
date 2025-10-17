@@ -34,15 +34,16 @@
       <div class="name">{{project.name}}</div>
       <div class="subtitle">
         <div class="year">{{project.year}}</div>
-        <div class="status"><Icon>{{project.statusIcon}}</Icon>{{project.status}}</div>
+        <Icon>{{project.statusIcon}}</Icon>
+        <div class="status">{{project.status}}</div>
       </div>
       <div class="tools">
         <div v-for="tool in project.tools" class="tool">{{tool}}</div>
       </div>
       <div class="description">{{project.description}}</div>
       <div class="links">
-        <a class="repo" :href="project.repo"><Icon>Code</Icon>GitHub</a>
-        <a v-if="project.live" class="live" :href="project.live"><Icon>Public</Icon>{{project.live.split("https://")[1]}}</a>
+        <a class="link repo" :href="project.repo"><Icon>Code</Icon>GitHub</a>
+        <a v-if="project.live" class="link live" :href="project.live"><Icon>Public</Icon>{{project.live.split("https://")[1]}}</a>
       </div>
       <div class="contributors">
         <template v-for="contributor in project.contributors">
@@ -66,14 +67,14 @@
         :onSlideChange="swiperOnSlideChange"
       >
         <SwiperSlide>
-          <div class="image swiper-zoom-container">
-            <img src="/blank.jpg" alt="" loading="eager"></img>
+          <div class="swiper-zoom-container">
+            <img class="image" src="/blank.jpg" alt="" loading="eager"></img>
           </div>
           <div class="swiper-lazy-preloader"></div>
         </SwiperSlide>
         <SwiperSlide v-for="image in project.images">
-          <div class="image swiper-zoom-container">
-            <img :src="image" alt="" loading="lazy"></img>
+          <div class="swiper-zoom-container">
+            <img class="image" :src="image" alt="" loading="lazy"></img>
           </div>
           <div class="swiper-lazy-preloader"></div>
         </SwiperSlide>
@@ -85,203 +86,179 @@
 <style>
   .project {
     display: flex;
-    width: 100%;
     align-items: center;
     justify-content: center;
-    background-color: var(--bg2);
-    padding: 1rem;
+    align-self: flex-start;
     height: 19rem;
+    width: 100%;
     max-width: 75rem;
     gap: 1rem;
-    flex-direction: row;
-    align-self: flex-start;
+    padding: 1rem;
+    background-color: var(--bg2);
+
+    .info {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      height: 100%;
+      width: 0;
+      flex: 1.25 1 0;
+      gap: 0.5rem;
+      text-align: end;
+      overflow: scroll;
+      scrollbar-width: none;
+
+      .name {
+        font-size: 3rem;
+      }
+
+      .subtitle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+
+        .year {
+          
+        }
+
+        .icon {
+          font-size: 1.25rem;
+        }
+        
+        .status {
+          
+        }
+      }
+
+      .tools {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 0.5rem;
+
+        .tool {
+          padding: 0.1rem 0.5rem;
+          background-color: var(--tool);
+        }
+      }
+
+      .description {
+        height: 100%;
+        width: 100%;
+        overflow-y: auto;
+        scrollbar-width: none;
+        overflow-wrap: break-word;
+      }
+
+      .links {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+
+        .link {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 0.3rem 0.5rem;
+          gap: 0.5rem;
+
+          .icon {
+            font-size: 1.4rem;
+          }
+        }
+
+        .repo {
+          background-color: var(--repo);
+        }
+
+        .live {
+          background-color: var(--live);
+        }
+      }
+
+      .contributors {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+
+        .contributor {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          white-space: nowrap;
+          overflow: hidden;
+          gap: 0.3rem;
+          padding: 0.1rem 0.5rem;
+          padding-left: 0.3rem;
+          background-color: var(--contributor);
+
+          .icon {
+            font-size: 1.25rem;
+          }
+        }
+      }
+    }
+
+    .images {
+      height: 100%;
+      width: 0; /* ? */
+      flex: 1 1 0;
+      background-color: var(--bg1);
+
+      .swiper {
+        height: 100%;
+
+        .image {
+          user-select: none;
+        }
+      }
+    }
   }
 
-  .reverse {
+  .project.reverse {
     flex-direction: row-reverse;
     align-self: flex-end;
-  }
 
-  .info {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    flex: 1.25 1 0;
-    width: 0;
-    align-items: flex-end;
-    text-align: end;
-    gap: 0.5rem;
-    overflow: scroll;
-    scrollbar-width: none;
-  }
+    .info {
+      align-items: start;
+      text-align: start;
 
-  .reverse > .info {
-    align-items: start;
-    text-align: start;
-  }
-
-  .images {
-    height: 100%;
-    flex: 1 1 0;
-    width: 0;
-    background-color: var(--bg1);
-  }
-
-  .swiper {
-    height: 100%;
-    width: 100%;
-  }
-
-  .image {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* overflow: hidden; */
-  }
-
-  .image > img {
-    display: block;
-    margin: auto;
-    user-select: none;
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-  }
-
-  .name {
-    font-size: 3rem;
-    line-height: 3rem;
-  }
-
-  .subtitle {
-    height: 1rem;
-    line-height: 1rem;
-    display: flex;
-    gap: 0.5rem;
-  }
-
-  .status {
-    display: flex;
-    line-height: 1rem;
-  }
-
-  .status > span {
-    margin-right: 0.5rem;
-    line-height: 1rem;
-    font-size: 1.25rem;
-    max-width: 1.25rem;
-  }
-
-  .tools {
-    height: 1.4rem;
-    line-height: 1.4rem;
-    display: flex;
-    gap: 0.5rem;
-    flex-wrap: wrap;
-    height: auto;
-    justify-content: flex-end;
-  }
-
-  .reverse > .info > .tools {
-    justify-content: flex-start;
-  }
-
-  .tool {
-    padding: 0 0.5rem;
-    background-color: var(--tool);
-  }
-
-  .description {
-    height: 100%;
-    padding: 0;
-    overflow: scroll;
-    scrollbar-width: none;
-    width: 100%;
-    max-width: 100%;
-    overflow-wrap: break-word;
-  }
-
-  .contributors {
-    height: 1.4rem;
-    line-height: 1.4rem;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    flex-wrap: wrap;
-    height: auto;
-    justify-content: flex-end;
-  }
-
-  .reverse > .info > .contributors {
-    justify-content: flex-start;
-  }
-
-  .contributor {
-    padding: 0 0.5rem;
-    background-color: var(--contributor);
-    display: flex;
-    white-space: nowrap;
-    overflow: hidden;
-  }
-
-  .contributor > span {
-    margin-right: 0.3rem;
-    line-height: 1.4rem;
-    font-size: 1.25rem;
-    max-width: 1.25rem;
-  }
-
-  .links {
-    height: 2rem;
-    line-height: 2rem;
-    display: flex;
-    gap: 0.5rem;
-    flex-wrap: wrap;
-    height: auto;
-    justify-content: flex-end;
-  }
-
-  .reverse > .info > .links {
-    justify-content: flex-start;
-  }
-
-  .links > a {
-    padding: 0 0.5rem;
-    display: flex;
-    align-items: center;
-  }
-
-  .links > a > span {
-    margin-right: 0.5rem;
-    line-height: 2rem;
-    font-size: 1.5rem;
-    max-width: 1.5rem;
-  }
-
-  .repo {
-    background-color: var(--repo);
-  }
-
-  .live {
-    background-color: var(--live);
+      .tools {
+        justify-content: flex-start;
+      }
+      
+      .links {
+        justify-content: flex-start;
+      }
+      
+      .contributors {
+        justify-content: flex-start;
+      }
+    }
   }
 
   @media only screen and (max-width: 768px) {
-    .project {
+    .project.project.project {
       flex-direction: column-reverse;
       height: 35rem;
-    }
-    .info {
-      width: 100%;
-      height: 0;
-      flex: 1.2 1 0;
-    }
-    .images {
-      width: 100%;
-      height: 0;
-      flex: 1 1 0;
+
+      .info {
+        width: 100%;
+        height: 0;
+        flex: 1.2 1 0;
+      }
+
+      .images {
+        width: 100%;
+        height: 0;
+        flex: 1 1 0;
+      }
     }
   }
 </style>
