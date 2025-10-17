@@ -69,15 +69,18 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      height: 2rem;
       gap: 0.5rem;
-      padding: 0 1rem;
+      padding: 0.5rem 1rem;
       padding-right: 0.7rem;
       cursor: pointer;
+      font-size: 1rem;
       background-color: var(--bg2);
 
       .icon {
         font-size: 1.5rem;
+        width: 1.5rem;
+        margin-top: 0.1rem;
+        margin-bottom: -0.1rem;
       }
     }
   }

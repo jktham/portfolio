@@ -124,6 +124,7 @@
 
         .icon {
           font-size: 1.25rem;
+          width: 1.25rem;
         }
         
         .status {
@@ -168,6 +169,7 @@
 
           .icon {
             font-size: 1.4rem;
+            width: 1.4rem;
           }
         }
 
@@ -200,6 +202,7 @@
 
           .icon {
             font-size: 1.25rem;
+            width: 1.25rem;
           }
         }
       }
